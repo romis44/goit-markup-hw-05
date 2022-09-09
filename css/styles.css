@@ -348,6 +348,37 @@ img {
   padding-bottom: 94px;
 }
 
+.content-item {
+  position: relative;
+
+}
+
+.overlay-work {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-name {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+}
+
+
 
 /* НАША КОМАНДА */
 
@@ -458,27 +489,21 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--main-icn-fill);
+
+  transition: border-color var(--animation), color var(--animation);
 }
 
 
 .customers-icon {
   fill: currentColor;
-
-  transition: fill var(--animation);
-
-}
-
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--accent-bg-cl);
-
-  transition: border var(--animation);
 }
 
 
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid var(--accent-bg-cl);
+  border-color: 1px solid var(--accent-bg-cl);
+
+  color: var(--accent-bg-cl);
 }
 
 /* НАШІ КОНТАКТИ */
@@ -644,9 +669,6 @@ img {
   padding: 94px 0;
 }
 
-.card {
-  transition: box-shadow var(--animation);
-}
 
 .card:hover,
 .card:focus {
@@ -657,8 +679,45 @@ img {
 .card {
   display: block;
   text-decoration: none;
+  transition: box-shadow var(--animation);
 }
 
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+
+  transition: transform var(--animation);
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-desc {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--light-txt-cl);
+}
+
+
+.card:hover .overlay {
+  transform: translateY(0);
+}
 
 /* Modal window */
 

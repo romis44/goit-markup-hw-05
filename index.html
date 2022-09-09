@@ -52,7 +52,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn" type="button"data-modal-open>Замовити послугу</button>
+                <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- Наші переваги -->
@@ -109,14 +109,26 @@
             <div class="container">
                 <h2 class="content-title">Чим ми займаємося</h2>
                 <ul class="content-list">
-                    <li class="content-item"><img class="img" src="./images/logo1.jpg" alt="робота за ноутбуком"
-                            width=370>
+                    <li class="content-item">
+                        <img class="img" src="./images/logo1.jpg" alt="робота за ноутбуком" width=370>
+                        <div class="overlay-work">
+                            <h3 class="overlay-name">Десктопні додатки</h3>
+
+                        </div>
                     </li>
-                    <li class="content-item"><img class="img" src="./images/logo2.jpg" alt="робота в телефоні"
-                            width=370>
+                    <li class="content-item">
+                        <img class="img" src="./images/logo2.jpg" alt="робота в телефоні" width=370>
+                        <div class="overlay-work">
+                            <h3 class="overlay-name">Мобільні додатки</h3>
+
+                        </div>
                     </li>
-                    <li class="content-item"><img class="img" src="./images/logo3.jpg" alt="робота в планшеті"
-                            width=370>
+                    <li class="content-item">
+                        <img class="img" src="./images/logo3.jpg" alt="робота в планшеті" width=370>
+                        <div class="overlay-work">
+                            <h3 class="overlay-name">Дизайнерські рішення</h3>
+
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -401,11 +413,11 @@
         </div>
     </footer>
     <!-- Modal window -->
-    <div class="backdrop is-hidden"data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" type="button"data-modal-close>  <svg class="close-icon" width="20" height="20">
-                <use href="./images/icons/icons.svg#icon-close"></use>
-            </svg></button>
+            <button class="modal-btn" type="button" data-modal-close> <svg class="close-icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-close"></use>
+                </svg></button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
