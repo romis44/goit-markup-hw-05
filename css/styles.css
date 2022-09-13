@@ -584,6 +584,10 @@ img {
   margin-right: 70px;
 }
 
+.social-footer{
+  margin-right: 93px;
+}
+
 
 .dark-icon {
   background-color: var(--icon-bg-cl);
@@ -774,13 +778,7 @@ img {
   cursor: pointer;
 
 }
-
-/* .subscribe{
-  display:flex;
- flex-direction: column;
-} */
-
-
+/* forma */
 
 .submit-btn{
   width: 200px;
@@ -790,15 +788,18 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin-left: 12px;
 font-family: 'Roboto';
-
 font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.06em;
+cursor: pointer;
 
 color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.form-field input{
+.form-subscribe input{
 padding: 20px;
 width: 358px;
 height: 50px;
@@ -809,8 +810,12 @@ border-radius: 4px;
 
 }
 
-.subscribe-form{
-  /* position: relative; */
+
+.form-subscribe{
+  display: flex;
+}
+
+.subscribe-title{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -823,12 +828,11 @@ color: #FFFFFF;
 padding-bottom: 20px;
 }
 
-
+.subscribe{
+  margin-bottom: 20px;
+}
 
 .telegram{
-/* position:absolute;
-margin-left: 10px; */
+  margin-left: 15px;
 fill: #FFFFFF;
-
-
 }
